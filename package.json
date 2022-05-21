@@ -1,8 +1,16 @@
 {
-  "name": "cat-energy-23",
+  "name": "cat-energy",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Личный проект «Кэт энерджи»",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Asya-ya/cat-energy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Asya-ya/cat-energy/issues"
+  },
   "devDependencies": {
+    "browser-sync": "2.26.14",
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10"
@@ -10,7 +18,8 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
-    "test": "npm run editorconfig"
+    "test": "npm run editorconfig",
+    "start": "browser-sync start --server \"source/\" --no-ui --files \"source/*.html\""
   },
   "editorconfig-cli": [
     "*.json",
