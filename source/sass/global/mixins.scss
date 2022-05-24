@@ -1,0 +1,17 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+@mixin font-oswald {
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+@mixin title-text($line-height: 36px) {
+  @include font-oswald;
+  font-size: 36px;
+  line-height: $line-height;
+  font-weight: 400;
+}

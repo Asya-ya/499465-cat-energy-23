@@ -1,0 +1,16 @@
+.main-nav__list {
+  @include list-reset;
+  text-align: center;
+
+  background-color: $white;
+}
+
+.main-nav__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

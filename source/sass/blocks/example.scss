@@ -1,0 +1,62 @@
+.example {
+  padding-top: 27px;
+  padding-bottom: 34px;
+  background-color: $light-grey;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 33px;
+
+  @include title-text(40px);
+  color: $black;
+}
+
+.example__text {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.example__result {
+  margin: 0;
+}
+
+.example__feature {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+}
+
+.example__value {
+  margin: 0;
+
+  @include font-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.example__cost {
+  margin-bottom: 42px;
+
+  @include font-oswald;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__photo {
+  margin-bottom: 30px;
+}
+
+.example__button {
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+}

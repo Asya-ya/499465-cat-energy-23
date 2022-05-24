@@ -1,3 +1,20 @@
-body {
-  background: tomato;
-}
+//* GLOBAL
+
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/content-wrapper.scss";
+@import "global/visually-hidden.scss";
+
+//* BLOCKS
+
+@import "blocks/page.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/button.scss";
+@import "blocks/types.scss";
+@import "blocks/how-works.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/copyright.scss";
