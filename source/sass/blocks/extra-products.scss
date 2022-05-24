@@ -1,0 +1,47 @@
+.extra-products {
+  padding-top: 25px;
+}
+
+.extra-products__title {
+  margin: 0;
+  margin-bottom: 36px;
+
+  @include font-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $black;
+}
+
+.extra-products__list {
+  @include list-reset;
+
+  margin-bottom: 35px;
+}
+
+.extra-products__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.extra-products__name {
+  margin: 0;
+  margin-bottom: 13px;
+
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $title-dark;
+  text-transform: uppercase;
+}
+
+.extra-products__feature {
+  margin-bottom: 15px;
+
+  line-height: 14px;
+}
+
+.extra-products__promotion {
+  margin-bottom: 35px;
+}

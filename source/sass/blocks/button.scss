@@ -1,10 +1,26 @@
 .button {
   @include font-oswald;
-  font-size: 14px;
-  line-height: 18px;
-  color: $white;
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
 
+  border: none;
+}
+
+.button--mini {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button--green {
+  color: $white;
+
   background-color: $basic-green;
+}
+
+.button--grey {
+  color: $text-dark;
+
+  background-color: $basic-grey;
 }

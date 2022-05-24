@@ -7,6 +7,7 @@
 @import "global/visually-hidden.scss";
 
 //* BLOCKS
+// index
 
 @import "blocks/page.scss";
 @import "blocks/main-nav.scss";
@@ -18,3 +19,10 @@
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
 @import "blocks/copyright.scss";
+
+//catalog
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/show-all.scss";
+@import "blocks/extra-products.scss";
+@import "blocks/promotion.scss";

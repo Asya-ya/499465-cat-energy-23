@@ -1,0 +1,15 @@
+.catalog {
+  padding-top: 27px;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 41px;
+
+  @include title-text;
+  color: $black;
+}
+
+.catalog__list {
+  @include list-reset;
+}
