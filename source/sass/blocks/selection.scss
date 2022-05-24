@@ -1,0 +1,21 @@
+.selection {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.selection__title {
+  margin: 0;
+  margin-bottom: 37px;
+
+  @include title-text;
+  color: $black;
+}
+
+.selection__intro-text {
+  margin: 0;
+  margin-bottom: 39px;
+
+  @include font-oswald;
+  color: $black;
+  text-transform: uppercase;
+}
