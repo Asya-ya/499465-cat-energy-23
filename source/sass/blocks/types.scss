@@ -1,0 +1,46 @@
+.types {
+  padding-top: 22px;
+}
+
+.types__list {
+  @include list-reset;
+}
+
+.types__item {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+
+  background-color: $basic-grey;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.types__title {
+  margin: 0;
+  margin-bottom: 29px;
+
+  @include font-oswald;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.types__text {
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.types__link {
+  @include font-oswald;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

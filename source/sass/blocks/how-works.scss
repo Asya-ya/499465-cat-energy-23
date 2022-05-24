@@ -1,0 +1,22 @@
+.how-works {
+  padding-top: 20px;
+  padding-bottom: 42px;
+}
+
+.how-works__title {
+  margin: 0;
+  margin-bottom: 38px;
+
+  @include title-text(40px);
+  color: $black;
+}
+
+.how-works__list {
+  @include list-reset;
+}
+
+.how-works__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+.promo {
+  padding-top: 27px;
+
+  color: $white;
+  text-align: center;
+
+  background-image: linear-gradient(0deg, $basic-green-overlay, $basic-green-overlay), url("../img/index-background-mobile.jpg");
+  background-size: 320px 302px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  @include title-text;
+}
+
+.promo__text {
+  margin: 0;
+  margin-bottom: 29px;
+
+  @include font-oswald;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
