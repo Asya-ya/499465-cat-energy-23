@@ -1,0 +1,18 @@
+.promotion {
+  min-height: 290px;
+  padding-right: 60px;
+  padding-left: 60px;
+
+  color: $white;
+  text-align: center;
+
+  background-image: linear-gradient(0deg, $basic-green-overlay, $basic-green-overlay), url("../img/promotion-image.jpg");
+  background-size: 280px 290px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.promotion__text {
+  font-size: 16px;
+  line-height: 20px;
+}
