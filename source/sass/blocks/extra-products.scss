@@ -2,6 +2,14 @@
   padding-top: 25px;
 }
 
+.extra-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
+}
+
 .extra-products__title {
   margin: 0;
   margin-bottom: 36px;
