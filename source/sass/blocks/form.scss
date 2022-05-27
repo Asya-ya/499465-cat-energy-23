@@ -1,3 +1,10 @@
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 569px 569px;
+  }
+}
+
 .form__fieldset {
   margin: 0;
   padding: 0;
@@ -5,26 +12,30 @@
   border: none;
 
   &--cat {
-    padding-bottom: 24px;
+    padding-bottom: 46px;
   }
 
   &--goal {
-    padding-top: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 46px;
   }
 
   &--contacts {
-    padding-top: 26px;
     padding-bottom: 24px;
+    grid-column: 1 / -1;
   }
 
   &--comment {
     padding-bottom: 23px;
+    grid-column: 1 / -1;
   }
 
   &--extra {
     padding-bottom: 34px;
+    grid-column: 1 / -1;
   }
+
+  //TODO переделать отступы
+  //TODO не модификатор а элемент
 }
 
 .form__fieldset-title {
@@ -34,6 +45,10 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
+}
+
+.form__item {
+  margin: 0;
 }
 
 .form__label,
