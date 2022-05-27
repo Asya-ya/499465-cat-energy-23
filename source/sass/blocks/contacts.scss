@@ -3,6 +3,11 @@
   padding-bottom: 27px;
 }
 
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts__text {
   margin: 0;
 
@@ -16,4 +21,8 @@
 .contacts__address {
   line-height: 20px;
   font-style: normal;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    text-align: right;
+  }
 }
