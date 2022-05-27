@@ -2,6 +2,13 @@
   background-color: $basic-grey;
 }
 
+.footer__wrapper .content-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .footer__contacts--grey {
   background-color: $basic-grey;
 }

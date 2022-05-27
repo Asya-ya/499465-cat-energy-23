@@ -1,7 +1,19 @@
 .content-wrapper {
-  width: $content-width-mobile;
-  padding-right: $content-padding-mobile;
-  padding-left: $content-padding-mobile;
+  width: $mobile-content-width;
+  padding-right: $mobile-content-padding;
+  padding-left: $mobile-content-padding;
 
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-content-width;
+    padding-right: $tablet-content-padding;
+    padding-left: $tablet-content-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+    padding-right: $desktop-content-padding;
+    padding-left: $desktop-content-padding;
+  }
 }

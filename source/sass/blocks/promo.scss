@@ -8,6 +8,15 @@
   background-size: 320px 302px;
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    text-align: left;
+  }
 }
 
 .promo__title {

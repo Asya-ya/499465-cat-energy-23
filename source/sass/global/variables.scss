@@ -9,7 +9,18 @@ $light-grey: #eaeaea;
 $text-dark: #444444;
 $title-dark: #222222;
 
+//* viewports
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 //* size
-$width-mobile: 320px;
-$content-padding-mobile: 20px;
-$content-width-mobile: $width-mobile - $content-padding-mobile * 2;
+$mobile-width: 320px;
+$mobile-content-width: 280px;
+$mobile-content-padding: ($mobile-width - $mobile-content-width) / 2;
+
+$tablet-content-width: 708px;
+$tablet-content-padding: ($tablet-width - $tablet-content-width) / 2;
+
+$desktop-content-width: 1220px;
+$desktop-content-padding: ($desktop-width - $desktop-content-width) / 2;

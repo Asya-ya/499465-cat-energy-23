@@ -1,8 +1,24 @@
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-nav__list {
   @include list-reset;
   text-align: center;
 
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+  }
 }
 
 .main-nav__link {
