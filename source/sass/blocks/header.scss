@@ -1,5 +1,7 @@
 .header {
   @media (min-width: $desktop-width) {
+    min-height: 696px;
+
     background-image: linear-gradient(0deg, $basic-green-overlay, $basic-green-overlay), url("../img/index-background-desktop.jpg");
     background-size: 50%;
     background-position: top right;
