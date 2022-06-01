@@ -1,14 +1,33 @@
 .how-works {
-  padding-top: 20px;
-  padding-bottom: 42px;
+  padding-top: 27px;
+  padding-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 103px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 68px;
+    border-bottom: none;
+  }
 }
 
 .how-works__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   @include title-text(40px);
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .how-works__list {
@@ -17,15 +36,107 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+    row-gap: 134px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
 .how-works__item {
+  position: relative;
+
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 111px;
+    padding-right: 13px;
+    padding-left: 0;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: -40px;
+      right: 33px;
+      left: auto;
+      z-index: -1;
+
+      @include font-oswald;
+      font-size: 280px;
+      line-height: 1;
+      color: $basic-grey;
+    }
+
+    &--leaf::after {
+      content: "1";
+    }
+
+    &--tub::after {
+      content: "2";
+    }
+
+    &--eat::after {
+      content: "3";
+    }
+
+    &--alarm::after {
+      content: "4";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+
+    &::after {
+      right: 0;
+    }
+  }
+
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../img/icon-leaf.svg");
+  }
+
+  &--tub::before {
+    background-image: url("../img/icon-tub.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../img/icon-eat.svg");
+  }
+
+  &--alarm::before {
+    background-image: url("../img/icon-alarm.svg");
   }
 }
