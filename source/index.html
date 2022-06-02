@@ -3,18 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper content-wrapper">
         <a class="header__logo">
-          <img class="header__logo-icon" src="img/logo-mobile.svg" alt="Логотип компании 'Кэт энерджи'" width="34" height="38">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-icon" src="img/logo-mobile.svg" alt="Логотип компании 'Кэт энерджи'" width="34" height="38">
+          </picture>
+
           <img class="header__logo-name" src="img/logo-name.svg" alt="Название компании" width="101" height="18">
         </a>
 
-        <nav class="header__main-nav main-nav main-nav--closed">
+        <nav class="header__main-nav main-nav main-nav--nojs">
           <button class="main-nav__toggle" aria-label="Открыть меню"></button>
 
           <ul class="main-nav__list">
@@ -40,7 +45,16 @@
 
             <p class="promo__text">Занялся собой? Займись котом!</p>
 
-            <img class="promo__image" src="img/promo-image.png" alt="Фото питания для котов 'Кэт энерджи'">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/promo-image-desktop.webp 1x, img/promo-image-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-image-tablet.webp 1x, img/promo-image-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/promo-image-mobile.webp 1x, img/promo-image-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1440px)" srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/promo-image-tablet.jpg 1x, img/promo-image-tablet@2x.jpg 2x">
+              <img class="promo__image" src="img/promo-image-mobile.png" srcset="img/promo-image-mobile@2x.png" alt="Фото питания для котов 'Кэт энерджи'" width="280" height="270">
+            </picture>
+
 
             <a href="form.html" class="promo__button button button--mini button--green">Подобрать программу</a>
           </div>
@@ -128,17 +142,35 @@
             </div>
           </div>
 
-          <div class="example__slider">
-            <div class="example__photo-wrapper">
-              <img class="example__photo example__photo--before" src="img/before-mobile.png" alt="Фото кота до похудения" width="311" height="232">
+          <div class="example__slider slider">
+            <div class="slider__list">
+              <div class="slider__slide slider__slide--before slider__slide--active">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
 
-              <img class="example__photo example__photo--after" src="img/after-mobile.png" alt="Фото кота после похудения" width="251" height="240">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="slider__photo" src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Фото кота до похудения">
+                </picture>
+              </div>
+
+              <div class="slider__slide slider__slide--after">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="slider__photo" src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Фото кота после похудения">
+                </picture>
+              </div>
             </div>
 
-            <div class="example__switch">
-              <button class="example__button" type="button">Было</button>
-              <input class="example__range" type="range" name="example-range" id="example-range">
-              <button class="example__button" type="button">Стало</button>
+            <div class="slider__switch">
+              <button class="slider__button" type="button">Было</button>
+
+              <input class="slider__range" type="range" name="slider-range" id="slider-range" min="0" max="100" step="100" value="0">
+
+              <button class="slider__button" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -152,14 +184,24 @@
 
           <p class="contacts__text">Приглашаем<br> к  сотрудничеству<br> дилеров!</p>
 
-          <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</address>
+          <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> <span>Санкт-Петербург</span></address>
         </div>
 
-        <div class="contacts__map"></div>
+        <div class="contacts__map map">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="улица Большая Конюшенная, дом 19/8, город Санкт-Петербург" width="320" height="362">
+          </picture>
+        </div>
       </section>
 
       <div class="footer__wrapper">
-        <div class="content-wrapper">
+        <div class="footer__content-wrapper content-wrapper">
           <a class="footer__logo">
             <img class="footer__logo-name" src="img/logo-name.svg" alt="Название компании" width="101" height="18">
           </a>
@@ -167,15 +209,27 @@
           <div class="footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vk" href="#" aria-label="Мы в Вконтакте"></a>
+                <a class="social__link" href="#" aria-label="Мы в Вконтакте">
+                  <svg class="social__icon social__icon--vk" width="23" height="13">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
               </li>
 
               <li class="social__item">
-                <a class="social__link social__link--inst" href="#" aria-label="Мы в Инстаграме"></a>
+                <a class="social__link" href="#" aria-label="Мы в Инстаграме">
+                  <svg class="social__icon social__icon--inst" width="16" height="16">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
 
               <li class="social__item">
-                <a class="social__link social__link-fb" href="#" aria-label="Мы в Фейсбуке"></a>
+                <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
+                  <svg class="social__icon social__icon--fb" width="13" height="20">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -183,6 +237,10 @@
           <div class="footer__copyright copyright">
             <a class="copyright__link" href="#">
               <span class="copyright__link-text">HTML Academy</span>
+
+              <svg class="copyright__icon" width="27" height="34">
+                <use xlink:href="img/sprite.svg#academy"></use>
+              </svg>
             </a>
           </div>
         </div>

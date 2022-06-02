@@ -2,10 +2,14 @@
   @media (min-width: $desktop-width) {
     min-height: 696px;
 
-    background-image: linear-gradient(0deg, $basic-green-overlay, $basic-green-overlay), url("../img/index-background-desktop.jpg");
+    background-image: linear-gradient(0deg, $basic-green-overlay, $basic-green-overlay), url("../img/index-background-desktop.webp");
     background-size: 50%;
     background-position: top right;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg, $basic-green-overlay, $basic-green-overlay), url("../img/index-background-desktop@2x.webp");
+    }
   }
 }
 
@@ -45,10 +49,20 @@
   margin-right: 55px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 12px;
+    margin-right: 0;
+    width: 174px;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 14px;
+    margin-right: 0;
+    width: 202px;
+    height: auto;
+  }
+}
+
+.header__logo-name {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
