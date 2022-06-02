@@ -15,8 +15,7 @@
     padding-top: 58px;
     padding-bottom: 75px;
 
-    background-image: linear-gradient(180deg, $white 194px, transparent 194px),
-                      linear-gradient(90deg, $basic-grey 71.4%, $light-grey 71.4%);
+    background-image: linear-gradient(180deg, $white 194px, transparent 194px), linear-gradient(90deg, $basic-grey 60%, $light-grey 40%);
   }
 }
 
@@ -189,5 +188,3 @@
     padding-left: 60px;
   }
 }
-
-

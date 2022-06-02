@@ -8,29 +8,28 @@
 
   @media (min-width: $desktop-width) {
     width: 680px;
+    min-height: 520px;
     margin-top: -58px;
     margin-bottom: 20px;
   }
 }
 
 .slider__slide {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  &--before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    overflow: hidden;
 
-    &--active {
-      display: block;
-    }
+    padding-bottom: 10px;
+
+    background-color: $light-grey;
   }
 
   @media (min-width: $tablet-width) {
     &--before {
-      position: absolute;
-      top: 0;
-      left: 0px;
-      z-index: 3;
-
       width: 50%;
-      overflow: hidden;
 
       background-image: linear-gradient(180deg, $white 170px, $light-grey 170px);
     }
@@ -46,6 +45,7 @@
 
   @media (min-width: $desktop-width) {
     &--before {
+      padding-bottom: 145px;
       width: 57.7%;
 
       background-image: linear-gradient(180deg, $white 194px, $basic-grey 194px);
@@ -56,11 +56,13 @@
     }
 
     &--after {
+      position: absolute;
+      padding-bottom: 145px;
       background-image: linear-gradient(180deg, $white 194px, $light-grey 194px);
     }
 
     &--after .slider__photo {
-      padding-left: 104px;
+      padding-left: 122px;
     }
   }
 }
@@ -115,6 +117,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  z-index: 5;
 
   @include font-oswald;
   font-size: 16px;
@@ -143,10 +146,10 @@
 }
 
 .slider__range {
-  -webkit-appearance: none;
+  appearance: none;
 
+  z-index: 5;
   margin: 0;
-
   width: 84px;
   height: 14px;
 

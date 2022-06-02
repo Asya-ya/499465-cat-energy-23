@@ -47,21 +47,10 @@ exports.html = html;
 // Scripts
 
 const scripts = () => {
-  return gulp.src("source/js/*.js")
-      .pipe(sourcemap.init())
-      .pipe(rollup.rollup({
-        input: 'source/js/main.js',
-        external: ['window'],
-        cache: true,
-        output: [
-          {
-            file: 'main.bundle.js',
-            format: 'es',
-            globals: {window: 'window'}
-          },
-    ]}))
+  return gulp.src("source/js/main.js")
+    .pipe(sourcemap.init())
     .pipe(terser())
-    .pipe(rename("main.bundle.min.js"))
+    .pipe(rename("main.min.js"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());

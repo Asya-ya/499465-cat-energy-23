@@ -230,6 +230,7 @@
     width: 32px;
 
     background-image: url("../img/icon-arrow-long.svg");
+    transition: all 0.1s linear;
   }
 
   &:active {

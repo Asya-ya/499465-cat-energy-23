@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Кэт энерджи</title>
   </head>
@@ -19,7 +20,7 @@
           <img class="header__logo-name" src="img/logo-name.svg" alt="Название компании" width="101" height="18">
         </a>
 
-        <nav class="header__main-nav main-nav main-nav--nojs">
+        <nav class="header__main-nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" aria-label="Открыть меню"></button>
 
           <ul class="main-nav__list">
@@ -28,11 +29,11 @@
             </li>
 
             <li class="main-nav__item">
-              <a href="catalog.html" class="main-nav__link">Каталог продукции</a>
+              <a href="#" class="main-nav__link">Каталог продукции</a>
             </li>
 
             <li class="main-nav__item">
-              <a href="form.html" class="main-nav__link">Подбор программы</a>
+              <a href="#" class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -144,7 +145,7 @@
 
           <div class="example__slider slider">
             <div class="slider__list">
-              <div class="slider__slide slider__slide--before slider__slide--active">
+              <div class="slider__slide slider__slide--before">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
@@ -166,11 +167,11 @@
             </div>
 
             <div class="slider__switch">
-              <button class="slider__button" type="button">Было</button>
+              <button id="tt" class="slider__button slider__button--before" type="button">Было</button>
 
-              <input class="slider__range" type="range" name="slider-range" id="slider-range" min="0" max="100" step="100" value="0">
+              <input class="slider__range" type="range" name="slider-range" id="slider-range" min="0" max="100" step="1" value="50">
 
-              <button class="slider__button" type="button">Стало</button>
+              <button class="slider__button slider__button--after" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -188,6 +189,8 @@
         </div>
 
         <div class="contacts__map map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A08b390e30dcaeb21bcaa345ee7f56d4c63f3f29248c4793a33721cb142d5d4c6&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
@@ -246,5 +249,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
