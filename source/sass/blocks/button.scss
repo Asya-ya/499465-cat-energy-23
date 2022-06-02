@@ -6,17 +6,36 @@
   text-decoration: none;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .button--mini {
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .button--green {
   color: $white;
 
   background-color: $basic-green;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: fade-out($white, 0.3);
+
+    background-color: #5eaa2f;
+  }
 }
 
 .button--grey {

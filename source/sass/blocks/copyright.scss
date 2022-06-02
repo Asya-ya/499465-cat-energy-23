@@ -1,4 +1,38 @@
+.copyright {
+  padding-top: 22px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: auto;
+  }
+}
+
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
   color: $text-dark;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
+}
+
+.copyright__link-text {
+  align-self: center;
+}
+
+.copyright__icon {
+  color: #666666;
+
+  .copyright__link:hover & {
+    color: $basic-green;
+  }
 }
